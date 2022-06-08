@@ -1,0 +1,37 @@
+<div class="container m-4">
+    <h1>Show List for Movie {{movieShowsList[0]?.title}}</h1>
+    <div class="col-6">
+        <div class="" *ngFor="let show of movieShowsList">
+            <div class="">
+                <div class="cinema">
+                    <h4>Cinema Name: {{show?.cinemaName}}</h4>
+                </div>
+                <div class="mb-5">
+                    <h5>Show Date: {{show?.date | date}}</h5>
+                    <h5>Show Start Time: {{show?.startTime | date:'shortTime'}}</h5>
+                    <h5>Show End Time: {{show?.endTime | date:'shortTime'}}</h5>
+                    <div>
+                        <button class="btn btn-primary"(click)="bookTicket(show)">Book Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="theatre d-flex" id="seats" *ngIf="display">
+    <div class="cinema-seats" *ngFor="let col of columns; let i=index">
+        <div class="cinema-row" *ngFor="let row of rows; let j=index">
+            <div class="seat" id="seat" [ngClass]="isSeatSelected((i+1)+(j*columns.length))?'active':bookedSeat((i+1)+(j*columns.length))?'empty':'filled'"
+                (click)="onSeatSelect((i+1)+(j*columns.length))">{{(i+1)+(j*columns.length)}}</div>
+        </div>
+    </div>
+    <div>
+        <div class="booking-details d-flex align-items-center">
+            <span>Total Seats Selected: {{selectedSeat.length}}</span>
+            <span>Seat Numbers:<span *ngFor="let seatno of selectedSeat">{{seatno}}</span></span>
+            <button class="btn btn-danger" (click)="ticketBooking()">Book</button>
+        </div>
+    </div>
+    <div class="close" (click)="close()"></div>
+</div>

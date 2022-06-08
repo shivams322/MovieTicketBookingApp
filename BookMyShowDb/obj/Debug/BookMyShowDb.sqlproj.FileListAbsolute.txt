@@ -1,0 +1,10 @@
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\bin\Debug\BookMyShowDb.dacpac
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\bin\Debug\BookMyShowDb.dll
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\bin\Debug\BookMyShowDb.pdb
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\obj\Debug\BookMyShowDb.sqlproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\obj\Debug\BookMyShowDb.dll
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\obj\Debug\BookMyShowDb.pdb
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\obj\Debug\Model.xml
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\obj\Debug\refactor.xml
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\obj\Debug\postdeploy.sql
+C:\Users\ASUS\source\repos\BookMyShow\BookMyShowDb\obj\Debug\predeploy.sql

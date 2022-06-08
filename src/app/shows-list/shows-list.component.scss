@@ -1,0 +1,97 @@
+.theatre {
+  display: flex;
+  position: absolute;
+  padding: 55px;
+  width: 600px;
+  height: 500px;
+  top: 20%;
+  left: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  .booking-details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    color: wheat;
+    background-color: black;
+    span{
+      padding-left: 20px;
+    }
+    .btn{
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+    }
+  }
+}
+
+.occupied{
+  position: absolute;
+  top: 0;
+  left: 0;
+    height: 50px;
+    width: 100%;
+    color: wheat;
+    background-color: black;
+    span{
+      padding-left: 5px;
+      &::after{
+        content: ',';
+      }
+    }
+}
+
+
+.cinema-seats {
+  .cinema-row {
+    margin: 0 6px;
+  }
+  .seat {
+    width: 35px;
+    height: 50px;
+    color: black;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    &:hover {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 7px;
+    }
+  }
+  
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.active{
+  background-color: rgb(74, 211, 28);
+}
+.filled{
+  background-color: #dc3545;
+}
+.empty{
+  background-color: rgb(255,255,255);
+}

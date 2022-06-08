@@ -1,0 +1,20 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Booking] (Table)
+       [dbo].[CinemaSeat] (Table)
+       [dbo].[Show] (Table)
+       [dbo].[UserSeat] (Table)
+       Default Constraint: unnamed constraint on [dbo].[UserSeat] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[UserSeat] (Default Constraint)
+
+** Supporting actions

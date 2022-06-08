@@ -1,0 +1,35 @@
+<div>
+  <div>
+    <div class="upperNavbar d-flex">
+      <div class="d-flex align-items-center ms-5 col-10">
+        <a class="bookMyShowLogo me-4" href="/">
+          <svg height="40" width="150">
+            <image href="//in.bmscdn.com/webin/common/icons/bms.svg" width="150" height="40"></image>
+          </svg>
+        </a>
+        <form action="" class="d-flex" [formGroup]="searchBar"  (ngSubmit)="searchThis()">
+          <div class="searchBar form-inline md-form form-group me-2" >
+            <input class="form-control" formControlName="searchText"  type="text" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+          </div>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>   
+      <div class="d-flex buttons my-auto">
+        <button class="signup-btn btn btn-danger" id="register" *ngIf="!display" routerLink="/register">Sign Up</button>
+        <button class="signin-btn btn btn-danger ms-4" id="login" *ngIf="!display" routerLink="/login">Sign In</button>
+        <button class="signout-btn btn btn-danger ms-4" id="logout" *ngIf="display" (click)="signout()">Sign Out</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lowerNavbar d-flex">
+    <div class="navbar navbar-expand ms-2">
+      <ul class="navbar-nav">
+        <li class="nav-item" [routerLinkActive]="'active'"><a class="nav-link" routerLink="movies">Movies</a></li>
+        <li class="nav-item" [routerLinkActive]="'active'"><a class="nav-link"  routerLink="ticket">Ticket History</a></li>
+      </ul>
+    </div>
+  </div>
+
+<router-outlet></router-outlet>
+</div>

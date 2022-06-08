@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Image]
+       [dbo].[Movie]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Movie] (Default Constraint)
+     Table rebuild
+       [dbo].[Image] (Table)
+       [dbo].[Movie] (Table)
+     Alter
+       [dbo].[Ticket] (View)
+     Create
+       [dbo].[MovieList] (View)
+
+** Supporting actions
+     Refresh
+       [dbo].[ShowList] (View)

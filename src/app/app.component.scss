@@ -1,0 +1,28 @@
+.upperNavbar{
+    height: 80px;
+    background-color: #333545;
+    .searchBar{
+        input{
+            height: 40px;
+            font-size: 10px;
+            width: 500px;
+            border-radius: 5px;
+        }
+    }
+}
+.lowerNavbar{
+    justify-content: space-between;
+    background-color: #222539;
+    a{
+        color: rgb(203, 203, 203);
+        &:hover{
+            color:white
+        }
+    }
+}
+
+.active{
+    a{
+        color: white;
+    }
+}

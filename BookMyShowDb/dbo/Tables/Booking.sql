@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Booking]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [NoOfSeats] INT NOT NULL, 
+    [BookTime] DATETIME NOT NULL DEFAULT GETDATE(), 
+    [UserId] INT NOT NULL, 
+    [ShowId] INT NOT NULL
+)

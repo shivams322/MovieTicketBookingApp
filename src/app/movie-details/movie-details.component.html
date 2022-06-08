@@ -1,0 +1,25 @@
+<div>
+    <div class="container">
+        <div class="d-flex">
+            <div class="m-4">
+                <img src="data:image/png;base64,{{imgStr}}" height="500px" alt="moviePoster">
+            </div>
+            <div class="m-4">
+                <h1>{{movieDetails?.title}}</h1>
+                <p>{{movieDetails?.language}}</p>
+                <p>Released Date: <span>{{movieDetails?.releaseDate | date}}</span></p>
+                <p>Duration: <span>{{movieDetails?.duration}}</span></p>
+                <span *ngFor="let genre of movieDetails?.genre">
+                    <span class="me-1">{{genre}}</span>
+                </span>
+                <div class="mt-3">
+                    <button class="btn btn-primary" [routerLink]="['/movies',movieId,'shows']">Book Ticket</button>
+                </div>
+            </div>
+        </div>
+        <div class="m-4">
+            <h3>About Movie</h3>
+            <p>{{movieDetails?.description}}</p>
+        </div>
+    </div>
+</div>

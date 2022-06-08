@@ -1,0 +1,13 @@
+<div class="row m-4 allMovies">
+    <div class="card m-4" *ngFor="let movie of movieList">
+        <a href="" class="" [routerLink]="['/movies',movie.id]" >
+            <img src="data:image/png;base64,{{movie.movieImage}}" class="card-img-top" alt="movieposter">
+            <div class="card-body">
+                <h5 class="card-title">{{movie?.title}}</h5>
+                <span class="badge bg-secondary">{{movie?.language}}</span>
+                <p class="card-text">{{movie?.description}}</p>
+            </div>
+        </a>
+    </div>
+</div>
+

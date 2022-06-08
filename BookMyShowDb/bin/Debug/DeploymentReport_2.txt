@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Admin]
+       [dbo].[Cinema]
+       [dbo].[Movie]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[Admin] (Table)
+       [dbo].[Cinema] (Table)
+       [dbo].[Movie] (Table)
+
+** Supporting actions
